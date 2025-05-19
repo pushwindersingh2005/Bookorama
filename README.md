@@ -2,7 +2,7 @@
 
 A clean, interactive book list manager built with HTML, CSS, and JavaScript.
 
-![Screenshot](images/book.png) *(Optional: Add a screenshot later)*
+![Screenshot](images/book.png)
 
 ## Features ✨
 - Add/delete books
