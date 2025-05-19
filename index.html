@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="styles.css" rel="stylesheet" />
+	<script src="app.js" defer></script>
+	<title>Bookorama | Books for Ninjas</title>
+</head>
+
+<body>
+	<main id="wrapper">
+		<header>
+			<div id="page-banner">
+				<h1 class="title">Bookorama</h1>
+				<p>Books for Ninjas</p>
+				<form id="search-books">
+					<label for="search" class="sr-only">Search books</label>
+					<input id="search" type="text" placeholder="Search books..." aria-label="Search books" />
+				</form>
+			</div>
+		</header>
+
+		<section id="book-list">
+			<h2 class="title">Books to Read</h2>
+			<ul>
+				<li>
+					<span class="name">Name of the Wind</span>
+					<span class="delete" role="button" tabindex="0">delete</span>
+				</li>
+				<li>
+					<span class="name">The Wise Man's Fear</span>
+					<span class="delete" role="button" tabindex="0">delete</span>
+				</li>
+				<li>
+					<span class="name">Kafka on the Shore</span>
+					<span class="delete" role="button" tabindex="0">delete</span>
+				</li>
+				<li>
+					<span class="name">The Master and the Margarita</span>
+					<span class="delete" role="button" tabindex="0">delete</span>
+				</li>
+			</ul>
+		</section>
+
+		<form id="add-book">
+			<div class="checkbox-group">
+				<input type="checkbox" id="hide" />
+				<label for="hide">Hide all books</label>
+			</div>
+			<label for="add-book-input" class="sr-only">Add a book</label>
+			<input id="add-book-input" type="text" placeholder="Add a book..." required />
+			<button type="submit">Add</button>
+		</form>
+
+		<section id="tabbed-content">
+			<div class="tabs" role="tablist">
+				<button role="tab" aria-selected="true" data-target="#about">About</button>
+				<button role="tab" aria-selected="false" data-target="#contact">Contact</button>
+			</div>
+			<div class="panel active" id="about" role="tabpanel">
+				<p>Welcome to Bookorama! We curate books for coding ninjas.</p>
+				<p>Our collection focuses on fantasy, philosophy, and classic literature.</p>
+			</div>
+			<div class="panel" id="contact" role="tabpanel">
+				<p>Email us: <a href="mailto:contact@bookorama.com">contact@bookorama.com</a></p>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
